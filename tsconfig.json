@@ -1,0 +1,67 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": "dist",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2017",
+        "rootDir": ".",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noImplicitAny": true,
+        "paths": {
+            "@/*": [
+                "*"
+            ],
+            "@types/*": [
+                "src/types/*"
+            ]
+        }
+    },
+    "compileOnSave": true,
+    "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-module",
+        "check-separator",
+        "check-rest-spread",
+        "check-type",
+        "check-typecast",
+        "check-type-operator",
+        "check-preblock",
+        "check-postbrace"
+    ],
+    "include": [
+        "src/**/*",
+        ".expo/types/**/*.ts",
+        "expo-env.d.ts",
+        "package.json",
+        "*.ts",
+        "*.tsx"
+    ],
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/no-explicit-any": [
+            "error"
+        ]
+    }
+}

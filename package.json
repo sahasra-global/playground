@@ -1,0 +1,18 @@
+{
+    "name": "@sahasra/playground",
+    "version": "0.0.1",
+    "description": "general purpose utilities",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Sunil Gummalla",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sahasra-global/playground.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
+}
