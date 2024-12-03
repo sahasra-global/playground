@@ -1,3 +1,5 @@
+import math
+
 # Print numbers from 1 to 10
 # For Loop
 for i in range(10):
@@ -32,17 +34,35 @@ while (num <= 10):
 
 # Print all the multiplication tables with numbers from 1 to 10
 num = 1
-multiple = 1
-while (num <= 10):
-    # converting int's to strings, to make it easy to print
-    multiple = 7 * num
+numMultipliedBy = 1
 
-    # Printing the multiplcation tables in format
-    print (f"7 * {num} = {multiple}") 
-    num += 1
+while (num <= 10) :
+    while numMultipliedBy <= 10: 
+        print (f"{num} * {numMultipliedBy} = {num * numMultipliedBy}") 
+        numMultipliedBy += 1
+    else:
+        num += 1
+        continue
 
 # Calculate the sum of numbers from 1 to 10
+sum = 0
+for i in range(11):
+    sum += i
+    i += 1
+print(sum)
 
 # Calculate 10!
+num = 10
+result = math.factorial(num)
+print(result)
 
 # Calculate the sum of even numbers greater than 10 and less than 30
+number = 11
+sum = 0
+
+while number < 30:
+    if (number % 2 == 0) :
+        sum += number
+    number += 1
+
+print(sum)
