@@ -33,16 +33,15 @@ while (num <= 10):
 
 
 # Print all the multiplication tables with numbers from 1 to 10
-num = 1
-numMultipliedBy = 1
-
-while (num <= 10) :
-    while numMultipliedBy <= 10: 
-        print (f"{num} * {numMultipliedBy} = {num * numMultipliedBy}") 
-        numMultipliedBy += 1
-    else:
-        num += 1
-        continue
+x = 1
+y = 1
+while (x < 11):
+    if y < 11:
+        print(x, " x ", y, " = ", int(x * y))
+        y += 1
+    elif y == 11:
+        x += 1
+        y = 1
 
 # Calculate the sum of numbers from 1 to 10
 sum = 0
