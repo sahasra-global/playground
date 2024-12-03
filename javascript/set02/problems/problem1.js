@@ -1,0 +1,1 @@
+let c = prompt("Enter a temperature in celcius: ")
