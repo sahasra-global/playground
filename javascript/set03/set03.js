@@ -1,9 +1,44 @@
 // Print the first 10 Fibonacci numbers without recursion
-function printingFirstTenFibonacciNumbers() {
-    
+function fibonacciWithoutRecusion() {
+    max = 10;
+
+    let a = 0, b = 1, temp;
+
+    console.log(a);
+
+    for (let i = 1; i < max; i++) {
+        console.log(b);
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
 }
 
+// Testing problem 1
+fibonacciWithoutRecusion()
+console.log() // NEW LINE
+
+// ###############################################################
+
 // Create a function that will find the nth Fibonacci number using recursion
+function fibonacci(num) {
+    if (num == 1) {
+        return 0;
+    }
+
+    if (num == 2) {
+        return 1;
+    }
+
+    return fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+// Testing problem 2
+console.log(fibonacci(10))
+console.log(fibonacci(25))
+console.log(fibonacci(40))
+
+// ###############################################################
 
 // Create a function that will return a Boolean specifying if a number is prime
 function isPrime(num) {
@@ -19,8 +54,11 @@ console.log(isPrime(5))
 console.log(isPrime(88))
 console.log(isPrime(345))
 
+// ###############################################################
+
 // Calculate the sum of digits of a positive integer number
 
+// ###############################################################
 
 // Print the first 100 prime numbers
 function printingFirst100PrimeNumbers() {
@@ -49,5 +87,7 @@ function printingFirst100PrimeNumbers() {
 
 // Testing Problem 5
 printingFirst100PrimeNumbers()
+
+// ###############################################################
 
 // Create a function that will return in an array the first “p” prime numbers greater than “n”
