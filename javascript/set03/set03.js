@@ -14,7 +14,7 @@ function fibonacciWithoutRecusion() {
     }
 }
 
-// Testing problem 1
+// Testing: Problem 1
 fibonacciWithoutRecusion()
 console.log() // NEW LINE
 
@@ -33,7 +33,7 @@ function fibonacci(num) {
     return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-// Testing problem 2
+// Testing: Problem 2
 console.log(fibonacci(10))
 console.log(fibonacci(25))
 console.log(fibonacci(40))
@@ -49,7 +49,7 @@ function isPrime(num) {
     return true;
 }
 
-// Testing Problem 3
+// Testing: Problem 3
 console.log(isPrime(5))
 console.log(isPrime(88))
 console.log(isPrime(345))
@@ -57,6 +57,21 @@ console.log(isPrime(345))
 // ###############################################################
 
 // Calculate the sum of digits of a positive integer number
+function calculateSum(num) {
+    let sum = 0;
+
+    while (num > 0) {
+        sum += (num % 10)
+        num = Math.floor(num / 10)
+    }
+    
+    return sum;
+}
+
+// Testing: Problem 4
+console.log(calculateSum(890))
+console.log(calculateSum(56788))
+console.log(calculateSum(88762345678))
 
 // ###############################################################
 
@@ -85,9 +100,26 @@ function printingFirst100PrimeNumbers() {
     console.log(prime)
 }
 
-// Testing Problem 5
+// Testing: Problem 5
 printingFirst100PrimeNumbers()
 
 // ###############################################################
 
-// Create a function that will return in an array the first “p” prime numbers greater than “n”
+// Create a function that will return in an array the first “p” 
+// prime numbers greater than “n”
+function printNPrimeNumbersAfterP(p, n) {
+    let primes = [];
+    let current = n + 1;
+
+    while (primes.length < p) {
+        if (isPrime(current)) {
+            primes.push(current);
+        }
+        current += 1;
+    }
+
+    return primes;
+}
+
+// Testing: Problem 6
+console.log(printNPrimeNumbersAfterP(10, 5))
