@@ -1,6 +1,15 @@
 # Print the distance between the first hundred prime numbers
-def prime_numbers():
-    nums =[]
-    i = 0
-    for i <10000000:
-        if iZa2e
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+primes = []
+num = 2
+while len(primes) < 100:
+    if is_prime(num):
+        primes.append(num)
+    num += 1
+print(primes[99]-primes[0])

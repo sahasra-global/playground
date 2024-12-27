@@ -1,7 +1,10 @@
 // Create a function that will capitalize the first letter of each word in a text
-let x = "hello world"
-console.log(x.title())
+let input = prompt("Enter a sentence: ");
+let words = input.split(" ");
 
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+}
 
-
-//not done yet
+output = words.join(" ");
+console.log(output)
