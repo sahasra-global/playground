@@ -28,13 +28,13 @@ function randomlyAssignArrayValues(array1, array2) {
 
 // Create a function that will receive two arrays and will return an array with elements 
 // that are in the first array but not in the second
-function returnFirstArray(array1, array2) {
-    return array1
+function differenceBetweenArrays(arr1, arr2) {
+    return arr1.filter(item => !arr2.includes(item));
 }
 
 // Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
-function generateArray(size) {
-    
+function getDistinctElements(arr) {
+    return [...new Set(arr)];
 }
 
 // Calculate the sum of first 100 prime numbers and return them in an array

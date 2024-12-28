@@ -35,11 +35,11 @@ getRandomArray(array1, array2)
     Create a function that will receive two arrays and will return an array with 
     elements that are in the first array but not in the second
 '''
-def getFirstArray(array1, array2):
-    print(array1)
+def difference_between_arrays(arr1, arr2):
+    return [item for item in arr1 if item not in arr2]
 
 # Problem 3: Testing
-getFirstArray(array1, array2)
+difference_between_arrays(array1, array2)
 
 ######################################################
 
@@ -47,6 +47,13 @@ getFirstArray(array1, array2)
     Create a function that will receive an array of numbers as argument and will return 
     a new array with distinct elements
 '''
+def get_distinct_elements(arr):
+    return list(set(arr))
+
+# Problem 4: Testing
+numbers = [1, 2, 2, 3, 4, 4, 5]
+distinct_numbers = get_distinct_elements(numbers)
+print(distinct_numbers)  # Output: [1, 2, 3, 4, 5]
 
 ######################################################
 
