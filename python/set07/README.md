@@ -1,5 +1,5 @@
 <h1>Set 07 | Lakshmi | Python</h1>
-<h3></h3>
+<h3>The file contains: </h3>
 <ul>
     <li>Create a function that returns an array with words inside a text.</li>
     <li>Create a function to convert a CSV text to a “bi-dimensional” array</li>
