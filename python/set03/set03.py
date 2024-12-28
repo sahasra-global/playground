@@ -45,7 +45,7 @@ print(is_prime(78888920))
 print(is_prime(2345))
 print(is_prime(1234))
 
-# #################################################
+#################################################
 
 # Calculate the sum of digits of a positive integer number
 def sum_of_digits(num):
@@ -62,6 +62,41 @@ print(sum_of_digits(875358990765))
 print(sum_of_digits(2345678987654))
 print(sum_of_digits(88759866789))
 
+#################################################
+
 # Print the first 100 prime numbers
+def print_first_100_prime_nums():
+    primes = []
+    currentNumber = 2
+
+    while len(primes) < 100:
+        if is_prime(currentNumber):
+            primes.append(currentNumber)
+        currentNumber += 1
+
+    return primes
+
+# Testing: Problem 5
+print(print_first_100_prime_nums())
+
+#################################################
 
 # Create a function that will return in an array the first “p” prime numbers greater than “n”
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def print_n_prime_numbers_after_p(p, n):
+    primes = []
+    current = n + 1
+
+    while len(primes) < p:
+        if is_prime(current):
+            primes.append(current)
+        current += 1
+
+    return primes
